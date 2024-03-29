@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Propinas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora de Propinas</h1>
+    <form id="tipCalculator">
+        <label for="totalBill">Total de la cuenta:</label>
+        <input type="number" id="totalBill" step="0.01">
+        <label for="tipPercentage">Porcentaje de propina:</label>
+        <input type="number" id="tipPercentage" step="0.01">
+        <button type="button" onclick="calculateTip()">Calcular Propina</button>
+    </form>
+    <div id="tipAmount"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
